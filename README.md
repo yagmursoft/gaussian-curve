@@ -1,4 +1,4 @@
-# Gaussian Curve
+# 📈 Gaussian Curve
 
 ## English
 **This project provides an error-free display of the Gaussian curve.**
