@@ -27,13 +27,13 @@ const Home = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
       <Card className="w-full max-w-3xl shadow-xl rounded-2xl bg-white p-6">
         <CardBody>
-          <h2 className="text-xl pr text-center mb-4">Normal Dağılım Grafiği</h2>
+          <h2 className="text-xl pr text-center mb-4">Normal Distribution Graph</h2>
           <div className="flex flex-col gap-4 mb-4">
-            <span className="mon">Ortalama</span>
+            <span className="mon">Mean</span>
             <Input type="number" placeholder="Ortalama (Mean)" value={mean} onChange={(e) => setMean(e.target.value)} />
-            <span className="mon">Standart Sapma</span>
+            <span className="mon">Standart Deviation</span>
             <Input type="number" placeholder="Standart Sapma (Std Dev)" value={stdDev} onChange={(e) => setStdDev(e.target.value)} />
-            <Button onClick={handleGenerate} className="bg-blue-500 text-white">Grafiği Göster</Button>
+            <Button onClick={handleGenerate} className="bg-blue-500 text-white">Show Graphic</Button>
           </div>
           {data && (
             <ResponsiveContainer width="100%" height={400}>
